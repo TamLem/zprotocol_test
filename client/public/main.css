@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/smoke_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Grid Layout CSS Start...  */
+
+.container {
+    width: 70%;
+    height: 70%;
+    margin: 15vh auto 15vh auto;
+    color: white;
+    display: grid;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 2fr 0.5fr 0.5fr;
+    justify-items: center;
+}
+
+.heading {
+    grid-column: 1/3;
+    grid-row: 1 ;
+    margin-bottom: 3%;
+    
+}
+
+.form {
+    display: contents;
+}
+
+.image-uploader {
+    grid-column: 1;
+    grid-row: 2;
+    color: gray;
+    align-self: center;
+    text-align: end;
+}
+
+.user-data {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+    align-self: center;
+}
+
+.checkbox-container {
+    grid-column: 1/3;
+    grid-row: 3;
+    padding: 0 30% 0 30%;
+}
+
+.reg-button-div {
+    grid-column: 1/3;
+    grid-row: 4;
+    text-align: center;
+    padding: 10px 30% 0 25%;
+}
+
+@media only screen and (max-width: 500px) {
+
+    body {
+        background-repeat: repeat-y
+    };
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 0.5fr 0.5fr;
+        justify-items: center;
+    }
+
+    .heading {
+        grid-column: 1;
+        grid-row: 1 ;
+        margin-bottom: 3%;
+        
+    }
+       
+    .image-uploader {
+        grid-column: 1;
+        grid-row: 2;
+        color: gray;
+        align-self: center;
+        text-align: center;
+    }
+    
+    .user-data {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .checkbox-container {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .reg-button-div {
+        grid-column: 1;
+        grid-row: 5;
+        text-align: center;
+    }
+    
+}
+/* Grid Layout CSS end...  */
+
+.title {
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 5em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 0.8;
+}
+
+.subtitle {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'open sans', sans-serif;
+
+}
+
+#image-upload {
+    color: gray;
+    fill: white;
+    background: honeydew;
+    border-radius:200px;
+    max-width: 50%;
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+#profile-input {
+    display: none;
+}
+
+.form-input {
+    display: block;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    height: 1.5em;
+    padding: 5px;
+}
+
+#birth-date {
+    width: 85%;
+}
+
+.checkbox-div {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    left: 34%;
+}
+
+.checkbox-custom {
+    display: block;
+    padding-right: 10px;
+    
+}
+
+.checkbox-custom:visited {
+    display: block;
+    transform: rotate(90deg);
+    padding-right: 10px;
+    
+}
+
+.checkbox-text {
+    font-family: 'open sans', sans-serif;
+    font-size: .7em;
+    font-weight: 600;
+}
+
+#reg-button {
+    background-color: #E5385B;
+    padding: 5px 30px 5px 30px;
+    border-radius: 7px;
+    border: solid 1px white;
+    color: honeydew;
+}

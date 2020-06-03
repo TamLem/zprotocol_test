@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <p class="title">
+                BENVENUTO IN ZPROTOCOL
+            </p>
+            <p class="subtitle">
+                Questo é un test di prova
+            </p>
+        </div>
+
+        <div class="image-uploader">
+            <label for="profile-input"><img id="image-upload" src="./assets/upload.png" alt=""></label>
+            <input type="file" id="profile-input" name="profile" accept="image/png, image/jpeg">
+        </div>
+
+        <form action="/" class="form" id="form">
+            
+            <div class="user-data">
+                <input type="text" class="form-input" name="id" id="surname" placeholder="Cognome" minlength="1" maxlength="20" required>
+                <input type="text" class="form-input" name="name" id="name" placeholder="Nome" minlength="1" maxlength="20" required>
+                <input onfocus="(this.type='date')" class="form-input" name="birthDate" id="birth-date" placeholder="Data di nascita" required>
+                <input type="email" class="form-input" name="email" id="email"  placeholder="E-mail"  required>
+                <input type="password" class="form-input" name="password" id="password" placeholder="Password" type="hidden" minlength="6" maxlength="20" required>
+                <input type="password" class="form-input" name="passwordConf" id="confirm-password" placeholder="Conferma Password" type="hidden" minlength="1" maxlength="20" required>
+            </div>
+                
+            <div class="checkbox-container">
+                <div class="checkbox-div">
+                    <input type="checkbox" name="personal-data" class="checkbox" id="check1" required>
+                    <label for="check1"><span class="material-icons checkbox-custom" id="checkbox1">check_box_outline_blank</span></label> 
+                    <label for="personal-data" class="checkbox-text">Acconsento al trattamento dati personali a fini della ricezione di news, offerte e info promozionali da parte di Zprotocol </label>
+                </div>
+                <div class="checkbox-div">
+                    <input type="checkbox" name="privacy" class="checkbox" id="check2" required>
+                    <label for="check2"><span class="material-icons checkbox-custom" id="checkbox2"> check_box_outline_blank</span></label>         </span>
+                    <label for="check2" class="checkbox-text">Ho letto e accetto l'informativa sulla privacy  
+                    </label>
+                </div>
+            </div>
+            <div class="reg-button-div">
+                <button id="reg-button" type="submit">Registra</button>
+            </div>
+       
+    </form> 
+
+</body>
+</html>
