@@ -1,3 +1,6 @@
+**Alert -- Error when starting the index.js because the database is not connected
+   **create a database on testing machine to fix this
+
 * HTML CSS and JS for the front end.
     * CSS grid was used for the layout 
 * Backend, express server 
